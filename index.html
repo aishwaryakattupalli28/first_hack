@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Pricing Intelligence Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Restaurant Pricing Intelligence Dashboard</h1>
+    <p>Executive Pricing Intelligence Panel</p>
+
+    <div class="dropdown-container">
+        <div>
+            <label>Select Dish:</label>
+            <select id="dishSelect">
+                <option value="biryani">Chicken Biryani</option>
+                <option value="vegBiryani">Veg Biryani</option>
+                <option value="butterChicken">Butter Chicken</option>
+                <option value="chicken65">Chicken 65</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Select Location:</label>
+            <select id="citySelect">
+                <option value="hyderabad">Hyderabad</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- 🔥 KPI DASHBOARD -->
+    <section class="kpi-grid">
+        <div class="kpi-card">
+            <h3>Avg Market Price</h3>
+            <p id="avgPrice">₹0</p>
+        </div>
+        <div class="kpi-card">
+            <h3>Avg Rating</h3>
+            <p id="avgRating">0.0 ⭐</p>
+        </div>
+        <div class="kpi-card">
+            <h3>Total Revenue Gain</h3>
+            <p id="totalRevenue">₹0</p>
+        </div>
+        <div class="kpi-card">
+            <h3>Premium Leader</h3>
+            <p id="premiumLeader">-</p>
+        </div>
+    </section>
+
+    <!-- TABLE -->
+    <section class="card">
+        <h2>Detailed Market Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Restaurant</th>
+                    <th>Rating ⭐</th>
+                    <th>Current Price</th>
+                    <th>Zomato</th>
+                    <th>Swiggy</th>
+                    <th>Segment</th>
+                    <th>Suggested Price</th>
+                    <th>Revenue Gain</th>
+                </tr>
+            </thead>
+            <tbody id="priceTableBody"></tbody>
+        </table>
+    </section>
+
+    <!-- CHARTS -->
+<section class="charts-row">
+    <div class="chart-card">
+        <h2>Historical Pricing Trend</h2>
+        <canvas id="trendChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+        <h2>Revenue Gain Distribution</h2>
+        <canvas id="revenueChart"></canvas>
+    </div>
+</section>
+
+   
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
