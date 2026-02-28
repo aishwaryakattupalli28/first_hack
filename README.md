@@ -17,6 +17,7 @@ A smart pricing analytics dashboard that helps restaurants optimize pricing usin
 - Chart.js
 
 ## Live Demo
-(Add your GitHub Pages link here after enabling it)
+https://aishwaryakattupalli28.github.io/first_hack/
+
 
 
